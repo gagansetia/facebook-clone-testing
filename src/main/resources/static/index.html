@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FaceConnect</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="authView" class="auth-page">
+    <section class="brand-panel">
+      <h1>faceconnect</h1>
+      <p>Connect with friends and the world around you.</p>
+    </section>
+    <section class="auth-card">
+      <h2 class="mobile-login-title">Log in to FaceConnect</h2>
+      <form id="loginForm">
+        <input id="loginUser" aria-label="Email or username" placeholder="Email or username" required />
+        <input id="loginPassword" aria-label="Password" type="password" placeholder="Enter your password" required />
+        <button class="primary" type="submit">Log in</button>
+        <a href="#" id="forgotPassword">Forgot password?</a>
+        <hr />
+        <button class="create" id="showSignup" type="button">Create new account</button>
+      </form>
+      <p id="authMessage" class="message"></p>
+      <p class="mobile-brand">∞ <strong>FaceConnect</strong></p>
+    </section>
+  </main>
+
+  <div id="signupModal" class="modal hidden" role="dialog" aria-modal="true">
+    <form id="signupForm" class="signup-card">
+      <button class="close" type="button" data-close>×</button>
+      <h2>Create a new account</h2><p>It's quick and easy.</p>
+      <div class="names"><input id="firstName" placeholder="First name" required /><input id="lastName" placeholder="Surname" required /></div>
+      <input id="signupEmail" type="email" placeholder="Email address" required />
+      <input id="signupPassword" type="password" minlength="8" placeholder="New password (8+ characters)" required />
+      <button class="primary" type="submit">Sign up</button>
+    </form>
+  </div>
+  <div id="resetModal" class="modal hidden" role="dialog" aria-modal="true"><form id="resetForm" class="signup-card password-reset"><button class="close" type="button" data-close>×</button><h2>Choose a password</h2><p class="password-rule">Your password must have at least 6 letters, numbers and symbols (like ! and %).</p><label for="resetUser">Username</label><input id="resetUser" placeholder="Username" required /><label for="resetPassword">Password</label><input id="resetPassword" type="password" placeholder="Password" required /><button class="primary" type="submit">Update password</button><p id="resetMessage" class="message"></p></form></div>
+
+  <div id="appView" class="hidden">
+    <header class="topbar">
+      <div class="brand"><div class="logo">f</div><b>faceconnect</b></div><div class="search">⌕ <input id="searchInput" placeholder="Search FaceConnect" /></div>
+      <nav><button id="navHome" title="Home" class="nav-active"><span>⌂</span><em>Home</em></button><button id="navFriends" title="Friends"><span>♟</span><em>Friends</em></button><button id="navWatch" title="Watch"><span>▶</span><em>Watch</em></button><button id="navMarketplace" title="Marketplace"><span>▰</span><em>Marketplace</em></button></nav>
+      <div class="actions"><button id="createButton" title="Create a post">⊕</button><button id="notificationsButton" title="Notifications">♢<i id="notificationBadge">3</i></button><button id="messageButton" title="Messages">✉<i id="messageBadge">2</i></button><button id="logoutButton" class="account-trigger" title="Account menu"><span>G</span><b>⌄</b></button></div>
+    </header>
+    <div class="layout">
+      <aside class="left-menu">
+        <button id="profileButton" class="profile-line"><span class="avatar blue">G</span> Gagan</button>
+        <button data-view="friends">◉ &nbsp; Friends</button><button data-view="memories">◷ &nbsp; Memories</button><button data-view="saved">▣ &nbsp; Saved</button><button data-view="groups">▦ &nbsp; Groups</button><button data-view="marketplace">▰ &nbsp; Marketplace</button><button data-view="events">◉ &nbsp; Events</button>
+      </aside>
+      <section class="feed">
+        <div class="stories"><article class="story own"><span class="story-add">+</span><b>Create story</b></article><article class="story s1"><b>Bob Jones</b></article><article class="story s2"><b>Carol Ray</b></article><article class="story s3"><b>David Kim</b></article></div>
+        <div class="composer"><div class="composer-top"><span class="avatar blue">G</span><button id="openComposer">What's on your mind, Gagan?</button></div><div class="composer-actions"><button>▣ Live video</button><button id="photoButton">▧ Photo/video</button><button id="feelingButton">☺ Feeling/activity</button></div></div>
+        <div id="feedPosts"></div>
+        <section id="secondaryView" class="secondary-view hidden"></section>
+      </section>
+      <aside class="right-menu"><h3>Sponsored</h3><div class="ad"><div class="ad-image"></div><b>Discover new ideas</b><small>faceconnect.local</small></div><hr /><h3>Contacts</h3><div class="contact"><span class="online"></span><span class="avatar green">B</span> Bob Jones</div><div class="contact"><span class="online"></span><span class="avatar purple">C</span> Carol Ray</div><div class="contact"><span class="avatar orange">D</span> David Kim</div></aside>
+    </div>
+  </div>
+
+  <div id="postModal" class="modal hidden" role="dialog" aria-modal="true"><form id="postForm" class="post-card"><button class="close" type="button" data-close>×</button><h2>Create post</h2><div class="post-author"><span class="avatar blue">G</span><b>Gagan</b></div><textarea id="postText" maxlength="500" placeholder="What's on your mind, Gagan?"></textarea><label class="media-picker">▧ Add photo or video<input id="mediaInput" type="file" accept="image/*,video/*" /></label><input id="mediaUrl" type="url" placeholder="Or paste an image/video URL" /><div id="mediaPreview" class="media-preview hidden"></div><button class="primary" type="submit">Post</button></form></div>
+  <div id="commentModal" class="modal hidden" role="dialog" aria-modal="true"><form id="commentForm" class="post-card"><button class="close" type="button" data-close>×</button><h2>Comments</h2><div id="commentList" class="comment-list"></div><input id="commentText" placeholder="Write a comment..." required /><button class="primary" type="submit">Comment</button></form></div>
+  <div id="messagesPanel" class="floating-panel hidden"><header><b>Messages</b><button data-close-panel="messagesPanel">×</button></header><div id="conversation" class="conversation"></div><form id="messageForm"><input id="messageText" placeholder="Message Bob..." required /><button>Send</button></form></div>
+  <div id="notificationsPanel" class="floating-panel hidden"><header><b>Notifications</b><button data-close-panel="notificationsPanel">×</button></header><div id="notificationList"></div></div>
+  <div id="accountPanel" class="floating-panel account-panel hidden"><button id="accountCard" class="account-card"><span class="avatar blue">G</span><span><b>Gagan</b><small>See your profile</small></span></button><button id="accountProfile">👤 See your profile</button><button id="settingsButton">⚙ Settings & privacy <span>›</span></button><label class="dark-option">☾ Dark mode <input id="darkMode" type="checkbox" /></label><hr /><button id="confirmLogout">↪ Log out</button></div>
+  <div id="settingsPanel" class="floating-panel account-panel hidden"><header><button id="settingsBack">‹</button><b>Settings & privacy</b><span></span></header><button data-setting="Privacy checkup">🔒 Privacy checkup</button><button data-setting="Notification settings">🔔 Notification settings</button><button data-setting="Your activity log">▤ Your activity log</button><button data-setting="Help & support">?</button></div>
+  <div id="searchPanel" class="search-panel hidden"></div>
+  <div id="toast" class="toast hidden"></div>
+  <script src="app.js"></script>
+</body>
+</html>
