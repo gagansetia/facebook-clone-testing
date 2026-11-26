@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FaceConnect Test Results</title>
+<style>
+  *{box-sizing:border-box} body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1c1e21;background:#fff}
+  .wrap{max-width:1100px;margin:0 auto;padding:28px 20px 60px}
+  h1{font-size:34px;margin:0 0 20px}
+  .banner{background:#0b57b7;color:#fff;border-radius:6px;padding:22px 16px 26px;text-align:center}
+  .banner h2{margin:0 0 18px;font-size:24px}
+  .stats{display:flex;justify-content:center;flex-wrap:wrap}
+  .stat{flex:1 1 140px;max-width:260px;padding:6px 10px;border-left:1px solid rgba(255,255,255,.3)}
+  .stat:first-child{border-left:0}
+  .stat .l{font-size:15px;opacity:.9} .stat .v{font-size:44px;font-weight:700;line-height:1.2}
+  .summary{margin:18px 0 2px;font-size:16px} .stamp{color:#8a8d91;font-size:13px}
+  .chart{margin:34px auto 10px;max-width:760px}
+  .legend{text-align:center;font-size:14px;color:#555;margin-bottom:6px}
+  .bars{display:flex;align-items:flex-end;justify-content:space-around;height:240px;border-bottom:2px solid #333;padding:0 10px}
+  .bcol{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+  .bnum{font-size:14px;margin-bottom:4px} .bar{width:62%;border-radius:3px 3px 0 0;min-height:2px}
+  .labels{display:flex;justify-content:space-around;padding:6px 10px 0;font-size:14px;color:#555}
+  .labels div{flex:1;text-align:center}
+  h3{margin:34px 0 10px;font-size:20px}
+  .tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+  .tools button{border:1px solid #c9ccd1;background:#f5f6f7;border-radius:18px;padding:6px 14px;cursor:pointer;font-size:14px}
+  .tools button.on{background:#0b57b7;border-color:#0b57b7;color:#fff}
+  .tools input{flex:1;min-width:180px;padding:7px 12px;border:1px solid #c9ccd1;border-radius:18px;font-size:14px}
+  .tblwrap{overflow-x:auto;border:1px solid #dddfe2;border-radius:6px}
+  table{border-collapse:collapse;width:100%;font-size:14px} th,td{padding:9px 12px;text-align:left;border-bottom:1px solid #eee;vertical-align:top}
+  th{background:#f0f2f5;position:sticky;top:0} tr:hover td{background:#fafbfc}
+  .badge{display:inline-block;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:700;color:#fff}
+  .passed{background:#1e8e3e} .failed{background:#c5221f} .skipped{background:#7a7f87}
+  .detail{color:#c5221f;font-size:12px;margin-top:4px;white-space:pre-wrap}
+  .muted{color:#8a8d91}
+</style></head><body><div class="wrap">
+<h1>Results and Conclusion</h1>
+<div class="banner"><h2>Execution Results</h2>
+  <div class="stats">
+    <div class="stat"><div class="l">Total Tests</div><div class="v">125</div></div>
+    <div class="stat"><div class="l">Passed</div><div class="v">125</div></div>
+    <div class="stat"><div class="l">Failed</div><div class="v">0</div></div>
+    <div class="stat"><div class="l">Pass Rate</div><div class="v">100.0%</div></div>
+  </div></div>
+<p class="summary">125 cases passed, 0 failed, and 0 were skipped, no failures.</p>
+<div class="stamp">Generated 16 Nov 2026, 13:22:44 &middot; FaceConnect Test Results</div>
+
+<div class="chart"><div class="legend">&#9632; Execution Results</div>
+  <div class="bars">
+    <div class="bcol"><div class="bnum">125</div><div class="bar" style="height:100.0%;background:#14142b"></div></div>
+    <div class="bcol"><div class="bnum">125</div><div class="bar" style="height:100.0%;background:#1e8e3e"></div></div>
+    <div class="bcol"><div class="bnum">0</div><div class="bar" style="height:0%;background:#c5221f"></div></div>
+    <div class="bcol"><div class="bnum">0</div><div class="bar" style="height:0%;background:#7a7f87"></div></div>
+  </div>
+  <div class="labels"><div>Total Tests</div><div>Passed Tests</div><div>Failed Tests</div><div>Skipped Tests</div></div>
+</div>
+
+<h3>Individual case results (125 cases)</h3>
+<div class="tools">
+  <button class="on" data-f="all">All</button><button data-f="passed">Passed</button>
+  <button data-f="failed">Failed</button><button data-f="skipped">Skipped</button>
+  <input id="q" placeholder="Search test case...">
+</div>
+<div class="tblwrap"><table id="t"><thead><tr><th>#</th><th>Test case</th><th>Category</th><th>Class</th><th>Time (s)</th><th>Status</th></tr></thead>
+<tbody>
+<tr data-s="passed"><td class="muted">1</td><td>TC-001 valid registration</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.007</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">2</td><td>TC-002 duplicate username</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">3</td><td>TC-003 duplicate email</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">4</td><td>TC-004 username too short</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">5</td><td>TC-005 username too long</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">6</td><td>TC-006 username special char</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">7</td><td>TC-007 invalid email no at</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">8</td><td>TC-008 invalid email no domain</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">9</td><td>TC-009 short password</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">10</td><td>TC-010 password no digit</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">11</td><td>TC-011 password no letter</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">12</td><td>TC-012 blank display name</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">13</td><td>TC-013 null username</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">14</td><td>TC-014 null email</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">15</td><td>TC-015 null password</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">16</td><td>TC-016 login valid</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">17</td><td>TC-017 login username case insensitive</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">18</td><td>TC-018 login bad password</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">19</td><td>TC-019 login unknown user</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">20</td><td>TC-020 login null username</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">21</td><td>TC-021 reset password valid</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">22</td><td>TC-022 reset unknown email</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">23</td><td>TC-023 reset short password</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">24</td><td>TC-024 reset no digit</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">25</td><td>TC-025 reset no letter</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">26</td><td>TC-026 repeated valid login 26</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">27</td><td>TC-027 repeated valid login 27</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">28</td><td>TC-028 repeated valid login 28</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">29</td><td>TC-029 repeated valid login 29</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">30</td><td>TC-030 repeated valid login 30</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">31</td><td>TC-031 repeated valid login 31</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">32</td><td>TC-032 repeated valid login 32</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">33</td><td>TC-033 repeated valid login 33</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">34</td><td>TC-034 repeated valid login 34</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">35</td><td>TC-035 repeated valid login 35</td><td>Registration / Login</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">36</td><td>TC-036 update profile</td><td>Profile</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">37</td><td>TC-037 saved display name</td><td>Profile</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">38</td><td>TC-038 profile privacy</td><td>Profile</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">39</td><td>TC-039 blank profile name</td><td>Profile</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">40</td><td>TC-040 missing profile user</td><td>Profile</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">41</td><td>TC-041 null bio</td><td>Profile</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">42</td><td>TC-042 long bio</td><td>Profile</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">43</td><td>TC-043 null privacy</td><td>Profile</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">44</td><td>TC-044 profile trim 44</td><td>Profile</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">45</td><td>TC-045 profile trim 45</td><td>Profile</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">46</td><td>TC-046 profile trim 46</td><td>Profile</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">47</td><td>TC-047 profile trim 47</td><td>Profile</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">48</td><td>TC-048 profile trim 48</td><td>Profile</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">49</td><td>TC-049 profile trim 49</td><td>Profile</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">50</td><td>TC-050 profile trim 50</td><td>Profile</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">51</td><td>TC-051 send request</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">52</td><td>TC-052 accept request</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">53</td><td>TC-053 friendship is mutual</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">54</td><td>TC-054 reject request</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">55</td><td>TC-055 cannot accept absent request</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">56</td><td>TC-056 cannot request self</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">57</td><td>TC-057 cannot request missing user</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">58</td><td>TC-058 duplicate request</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">59</td><td>TC-059 unfriend</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">60</td><td>TC-060 unfriend nonfriend</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">61</td><td>TC-061 block user</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">62</td><td>TC-062 blocked user cannot request</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">63</td><td>TC-063 block removes friendship</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">64</td><td>TC-064 friend notification</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">65</td><td>TC-065 accept notification</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">66</td><td>TC-066 independent friend count 66</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">67</td><td>TC-067 independent friend count 67</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">68</td><td>TC-068 independent friend count 68</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">69</td><td>TC-069 independent friend count 69</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">70</td><td>TC-070 independent friend count 70</td><td>Friend management</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">71</td><td>TC-071 create public post</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.004</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">72</td><td>TC-072 create friends post</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">73</td><td>TC-073 blank post</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">74</td><td>TC-074 post too long</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">75</td><td>TC-075 post unknown author</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">76</td><td>TC-076 post null privacy</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">77</td><td>TC-077 edit own post</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">78</td><td>TC-078 other cannot edit</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">79</td><td>TC-079 delete own post</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">80</td><td>TC-080 other cannot delete</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">81</td><td>TC-081 like public post</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">82</td><td>TC-082 count like</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">83</td><td>TC-083 duplicate like</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">84</td><td>TC-084 unlike post</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">85</td><td>TC-085 unlike absent like</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">86</td><td>TC-086 like notification</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">87</td><td>TC-087 comment public</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">88</td><td>TC-088 comment count</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">89</td><td>TC-089 blank comment</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">90</td><td>TC-090 long comment</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">91</td><td>TC-091 comment notification</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">92</td><td>TC-092 friends post hidden</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">93</td><td>TC-093 friends post visible to friend</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">94</td><td>TC-094 only me hidden</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">95</td><td>TC-095 owner sees only me</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">96</td><td>TC-096 deleted post cannot like</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">97</td><td>TC-097 deleted removes likes</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">98</td><td>TC-098 edit blank post</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">99</td><td>TC-099 edit long post</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">100</td><td>TC-100 posts receive sequential ids</td><td>Posts / Reactions</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">101</td><td>TC-101 send message</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">102</td><td>TC-102 message count</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">103</td><td>TC-103 blank message</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">104</td><td>TC-104 long message</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">105</td><td>TC-105 message missing recipient</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">106</td><td>TC-106 message self</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">107</td><td>TC-107 blocked message</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">108</td><td>TC-108 message notification</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">109</td><td>TC-109 search username</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">110</td><td>TC-110 search display name</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">111</td><td>TC-111 search case insensitive</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">112</td><td>TC-112 no search match</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">113</td><td>TC-113 blank search</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">114</td><td>TC-114 null search</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">115</td><td>TC-115 notifications initially empty</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">116</td><td>TC-116 unknown notifications empty</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">117</td><td>TC-117 users remain searchable 117</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">118</td><td>TC-118 users remain searchable 118</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">119</td><td>TC-119 users remain searchable 119</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">120</td><td>TC-120 users remain searchable 120</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">121</td><td>TC-121 users remain searchable 121</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">122</td><td>TC-122 users remain searchable 122</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">123</td><td>TC-123 users remain searchable 123</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">124</td><td>TC-124 users remain searchable 124</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.000</td><td><span class="badge passed">PASSED</span></td></tr>
+<tr data-s="passed"><td class="muted">125</td><td>TC-125 users remain searchable 125</td><td>Messaging / Search / Notifications</td><td>FacebookServiceTest</td><td>0.001</td><td><span class="badge passed">PASSED</span></td></tr>
+</tbody></table></div>
+</div>
+<script>
+  var f="all", q=document.getElementById("q"), rows=document.querySelectorAll("#t tbody tr");
+  function apply(){var s=q.value.toLowerCase();rows.forEach(function(r){
+    var ok=(f==="all"||r.dataset.s===f)&&r.textContent.toLowerCase().indexOf(s)>-1;r.style.display=ok?"":"none";});}
+  document.querySelectorAll(".tools button").forEach(function(b){b.onclick=function(){
+    document.querySelectorAll(".tools button").forEach(function(x){x.classList.remove("on")});
+    b.classList.add("on");f=b.dataset.f;apply();};});
+  q.oninput=apply;
+</script></body></html>
